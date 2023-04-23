@@ -53,6 +53,7 @@ kube-system   storage-provisioner                1/1     Running   0            
 ```
 ### Дополнительные команды
 ```
+minikube addons list := список дополнений в minikube;
 minikube delete := удалить minikube (так же удаляется ВМ);
 minikube dashboard := открыть дашборд;
 minikube ssh := войти на ВМ minikube, пользователь - docker;
