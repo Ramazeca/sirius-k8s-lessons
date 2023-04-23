@@ -60,6 +60,7 @@ kubectl version --short := вывод версий компонентов кла
 kubectl cluster-info := вывод статуса компонентов кластера k8s;
 kubectl get --raw='/readyz?verbose' := более подробный вывод статуса компонентов кластера;
 kubectl get nodes := вывод хостов кластера k8s;
-kubectl describe node MY_NODE := посмотреть дополнительные сведения по хосту кластера.
+kubectl describe node MY_NODE := посмотреть дополнительные сведения по хосту кластера;
+kubectl api-resources := посмотреть информацию по объектам API k8s.
 ```
 Если все получилось, переходим к знакомству с Pod'ами.
