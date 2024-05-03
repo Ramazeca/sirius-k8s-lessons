@@ -57,11 +57,12 @@ minikube addons list := список дополнений в minikube;
 minikube delete := удалить minikube (так же удаляется ВМ);
 minikube dashboard := открыть дашборд;
 minikube ssh := войти на ВМ minikube, пользователь - docker;
-kubectl version --short := вывод версий компонентов кластера k8s;
+kubectl version := вывод версий компонентов кластера k8s;
 kubectl cluster-info := вывод статуса компонентов кластера k8s;
 kubectl get --raw='/readyz?verbose' := более подробный вывод статуса компонентов кластера;
 kubectl get nodes := вывод хостов кластера k8s;
-kubectl describe node MY_NODE := посмотреть дополнительные сведения по хосту кластера;
+kubectl describe node minikube := посмотреть дополнительные сведения по хосту кластера;
 kubectl api-resources := посмотреть информацию по объектам API k8s.
 ```
+Полный справочник команд kubectl можно найит по ссылке: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 Если все получилось, переходим к знакомству с Pod'ами.
