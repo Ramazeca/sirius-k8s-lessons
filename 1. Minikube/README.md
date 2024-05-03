@@ -64,5 +64,5 @@ kubectl get nodes := вывод хостов кластера k8s;
 kubectl describe node minikube := посмотреть дополнительные сведения по хосту кластера;
 kubectl api-resources := посмотреть информацию по объектам API k8s.
 ```
-Полный справочник команд kubectl можно найит по ссылке: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+Полный справочник команд kubectl можно найти по ссылке: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 Если все получилось, переходим к знакомству с Pod'ами.
