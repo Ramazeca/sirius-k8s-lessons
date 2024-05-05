@@ -35,11 +35,10 @@ kubernetes              ClusterIP   10.96.0.1       <none>        443/TCP   25m
 nginx-deployment-yaml   ClusterIP   10.108.196.81   <none>        80/TCP    40s
 ```
 K8s говорит что теперь по IP 10.108.196.81:80 мы можем достучаться до нашего приложения с любой worker node кластера k8s, давайте проверим. \
-Так как в состав minikube входит control plane и worker node, давайте зайдем на него по ssh используя login/password: docker/tcuser. IP кластера можно узнать командой:
+Так как в состав minikube входит control plane и worker node, давайте зайдем на него по ssh используя команду:
 ```
-minikube ip
+minikube ssh
 ```
-или командой ```minikube ssh```. \
 Успешная авторизация в minikube выглядит так: \
  \
 ![pic_welcome_to_minikube](https://github.com/Ramazeca/sirius-k8s-lessons/blob/7ce46f3108fc4d84e27fc36e9c91a23e730cc63d/5.%20Services/pic_welcome_to_minikube.png "Welcome to minikube") \
