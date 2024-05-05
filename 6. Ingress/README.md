@@ -92,7 +92,7 @@ my-ingress   nginx   hello-world.info   172.24.104.56   80      1m54s
 ```
 Давайте проверим что ingress controller направляет трафик:
 ```
-curl --resolve "hello-world.info:80:$( minikube ip )" -i http://hello-world.info
+curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info
 ```
 Вывод будет примерно таким:
 ```
