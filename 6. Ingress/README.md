@@ -88,11 +88,11 @@ kubectl get ingress //можно использовать alias ing
 Вы должны увидеть адрес IPv4 в столбце ADDRESS, например:
 ```
 NAME         CLASS   HOSTS              ADDRESS         PORTS   AGE
-my-ingress   nginx   hello-world.info   172.24.104.56   80      1m54s
+my-ingress   nginx   hello-sirius.info   172.24.104.56   80      1m54s
 ```
 Давайте проверим что ingress controller направляет трафик:
 ```
-curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info
+curl --resolve "hello-sirius.info:80:ВАШ_MINIKUBE_IP" -i http://hello-sirius.info
 ```
 Вывод будет примерно таким:
 ```
@@ -108,7 +108,7 @@ Hello, world!
 Version: 1.0.0
 Hostname: web-68487bc957-cbx7w
 ```
-Так же Вы можете открыть браузер и перейти прямой ссылкой http://hello-world.info, но перед этим не забудьте добавить DNS-запись в файл hosts. \
+Так же Вы можете открыть браузер и перейти прямой ссылкой http://hello-sirius.info, но перед этим не забудьте добавить DNS-запись в файл hosts. \
 Расположение файла hosts в linux, windows:
 ```
 linux: /etc/hosts
@@ -163,7 +163,7 @@ ingress.networking.k8s.io/my-ingress configured
 ### 6. Проверка ingress'а
 Проверим доступ к версии 1.0.0 приложения:
 ```
-curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info
+curl --resolve "hello-sirius.info:80:ВАШ_MINIKUBE_IP" -i http://hello-sirius.info
 ```
 Вывод будет примерно такой:
 ```
@@ -182,7 +182,7 @@ Hostname: web-68487bc957-cbx7w
 Из вывода видно, что наше приложение версии 1.0.0 доступно снаружи и оно распологается на pod'е web-68487bc957-cbx7w. \
 Теперь проверим доступ к нашему приложению версии 2.0.0 выполнив команду:
 ```
-curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info/v2
+curl --resolve "hello-sirius.info:80:ВАШ_MINIKUBE_IP" -i http://hello-sirius.info/v2
 ```
 Вывод:
 ```
@@ -200,7 +200,7 @@ Hostname: web2-6459878f46-jbdmk
 ```
 Приложение версии 2.0.0 тоже доступно и мы подключились к pod'у web2-6459878f46-jbdmk. \
 Так же для проверки доступности можно использовать браузер, если Вы добавили записи в файл hosts. Откройте Ваш браузер и зайдите по адресам соответствующим версиям приложений: \
-Версия 1.0.0 -> http://hello-world.info \
-Версия 2.0.0 -> http://hello-world.info/v2
+Версия 1.0.0 -> http://hello-sirius.info \
+Версия 2.0.0 -> http://hello-sirius.info/v2
 
 
