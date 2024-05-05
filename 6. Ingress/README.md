@@ -163,7 +163,7 @@ ingress.networking.k8s.io/my-ingress configured
 ### 6. Проверка ingress'а
 Проверим доступ к версии 1.0.0 приложения:
 ```
-curl --resolve "hello-world.info:80:$( minikube ip )" -i http://hello-world.info
+curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info
 ```
 Вывод будет примерно такой:
 ```
