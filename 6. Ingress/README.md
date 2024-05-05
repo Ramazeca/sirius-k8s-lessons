@@ -182,7 +182,7 @@ Hostname: web-68487bc957-cbx7w
 Из вывода видно, что наше приложение версии 1.0.0 доступно снаружи и оно распологается на pod'е web-68487bc957-cbx7w. \
 Теперь проверим доступ к нашему приложению версии 2.0.0 выполнив команду:
 ```
-curl --resolve "hello-world.info:80:$( minikube ip )" -i http://hello-world.info/v2
+curl --resolve "hello-world.info:80:ВАШ_MINIKUBE_IP" -i http://hello-world.info/v2
 ```
 Вывод:
 ```
