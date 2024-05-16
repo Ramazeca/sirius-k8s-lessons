@@ -84,9 +84,9 @@ kubectl rollout history deployment/nginx-deployment
 REVISION  CHANGE-CAUSE
 1         <none>
 ```
-Начнем обновление образа, введите команду ниже, где <IMAGE_NAME> - имя нашего контейнера который мы обновляем:
+Начнем обновление образа, введите команду ниже, где <CONTAINER_NAME> - имя нашего контейнера который мы обновляем:
 ```
-kubectl set image deployment/nginx-deployment IMAGE_NAME=nginx:1.15.6
+kubectl set image deployment/nginx-deployment CONTAINER_NAME=nginx:1.15.6
 ``` 
 Вывод:
 ```
