@@ -3,3 +3,5 @@
 1. С официального сайта https://git-scm.com, установите git на ноутбук;
 2. На ноутбуке создайте рабочую папку "k8s" и перейдите в нее;
 3. Для клонирования материала используйте команду ```git clone https://github.com/Ramazeca/sirius-k8s-lessons```.
+
+Тест -> https://forms.yandex.ru/u/663fb941e010db5e8da7e7b2/
